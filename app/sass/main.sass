@@ -118,8 +118,8 @@ h2.type-head
 .header
 	width: 100%
 	padding: 8px 0
-	position: fixed
-	top: 0
+	// position: fixed
+	// top: 0
 	z-index: 110
 	background-color: #EBEBEC
 	transition: $time
@@ -181,7 +181,7 @@ h2.type-head
 	padding: 80px 0 0 0
 	background: url('../img/top-bg.jpg') center no-repeat
 	background-size: cover
-	min-height: 100vh
+	min-height: calc(100vh - 30%)
 	display: flex
 	align-items: center
 	box-sizing: border-box
@@ -252,6 +252,34 @@ h2.type-head
 	.button
 		width: 405px
 		margin: 0 auto
+
+
+
+.content-section
+	padding: 70px 0 100px
+
+
+
+.type-block
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-row-gap: 48px
+	grid-column-gap: 40px
+	.type-item
+		color: #232323
+		text-decoration: none
+		p
+			margin: 0 0 18px
+			font-size: 16px
+			font-weight: 700
+			line-height: 1
+			height: 32px
+			&.excerpt
+				font-weight: 400
+				font-size: 14px
+				line-height: 1.5
+				margin: 30px 0 20px 0
+				height: auto
 
 	
 
@@ -368,6 +396,7 @@ h2.type-head
 
 .main-footer
 	padding: 12px 0 16px 0
+	background-color: lighten($gray, 60%)
 	.footer-grid
 		display: flex
 		justify-content: space-between
