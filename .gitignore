@@ -8,6 +8,7 @@ lerna-debug.log*
 
 #dependencies
 /node-modules
+/.vscode
 package-lock.json
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
