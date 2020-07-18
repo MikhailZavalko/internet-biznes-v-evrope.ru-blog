@@ -7,17 +7,21 @@
 //Extra large: ≥1200px
 @media (max-width: 1400px)
 	.container
-		width: 958px
+		width: 1200px
+		box-sizing: border-box
 
 	.header
 		.main-head
-			grid-template-columns: auto 300px 215px
+			grid-template-columns: auto 300px
 		.head-contacts
 			margin-right: 50px
 
 	.top-section
 		h1
 			font-size: 28px
+
+	.type-block .type-item p
+		font-size: 16px
 
 	.main-footer
 		padding: 12px 0 16px 0
@@ -37,13 +41,29 @@
 					margin-top: 5px
 
 
+
+
+
+
+
+@media (max-width: 1200px)
+	.container
+		width: 992px
+		padding: 0 15px
+		
+
+
+
+
+
+
+
 //Large: ≥992px
 @media (max-width: 992px)
 
 	.container
 		width: 768px
 		padding: 0 15px
-		box-sizing: border-box
 
 	.header
 		.header-logo
@@ -204,6 +224,11 @@
 
 
 
+
+
+
+
+
 //Small: ≥576px
 @media (max-width: 576px)
 	.header
@@ -263,6 +288,12 @@
 		padding-top: 35px
 		margin: 0
 		background-position: left
+		&.single
+			padding: 70px 0
+			h2
+				display: block
+				font-size: 26px
+				margin: 0
 		.logo
 			p
 				margin: 0 0 0 12px
@@ -300,6 +331,18 @@
 
 	.type-block
 		grid-template-columns: repeat(1, 1fr)
+
+	.content-section 
+		&.single
+			padding: 50px 0 70px 0
+
+	.single-content
+		padding: 0
+		p
+			margin: 15px 0 20px 0
+			line-height: 1.6
+		img
+			margin: 30px 0
 
 	.main-footer
 		padding: 10px 0
