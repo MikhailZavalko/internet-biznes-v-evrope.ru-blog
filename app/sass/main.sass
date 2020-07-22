@@ -320,9 +320,22 @@ h2.type-head
 			margin-top: -40px
 			font-weight: 500
 	a
-		color: $blue
+		color: $accent
+		font-weight: 500
+		position: relative
+		text-decoration: none
 		&:hover
-			text-decoration: none
+			&::after
+				background-color: $accent
+		&::after
+			content: ''
+			position: absolute
+			bottom: 1px
+			right: 0
+			width: 100%
+			height: 2px
+			background-color: transparent
+			transition: $time
 	.img-grid
 		display: grid
 		grid-template-columns: repeat(3, 1fr)
